@@ -10,32 +10,61 @@
   white-space: nowrap;
   width: 1px;
 }
-/* основні параметри */
+/* base */
 
 body {
-  font-family: 'Roboto', sans-serif;
   color: #434455;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
   background-color: #fff;
 }
+
 ul,
 ol {
   list-style-type: none;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
 }
-button{
+
+.button {
+  display: block;
+  color: #fff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  text-transform: capitalize;
   cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0 auto;
 }
-/* хедер меню */
+
+.button:hover {
+  background-color: #404bbf;
+}
+
+/* header */
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -43,10 +72,21 @@ button{
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.logo-text {
+.logo-accent {
   color: #2e2f42;
 }
-.link-header {
+
+.header-nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -54,15 +94,22 @@ button{
   color: #2e2f42;
 }
 
-.address-header {
+.address {
   font-style: normal;
 }
+
+.address-list {
+  display: flex;
+  gap: 20px;
+}
+
 .link-address {
   font-size: 16px;
-  line-height: 1.50;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .link-header:hover,
 .link-header:focus,
 .link-address:hover,
@@ -70,12 +117,13 @@ button{
   color: #404bbf;
 }
 
-/* блок перший - замовлення */
+/* hero section */
 
-.business {
+.hero-s {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
-.business-h-one {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -83,7 +131,8 @@ button{
   text-align: center;
   color: #fff;
 }
-.business-button {
+.buttonn {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -91,13 +140,17 @@ button{
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0 auto;
 }
-.business-button:hover,
-.business-button:focus {
+.buttonn:hover,
+.buttonn:focus {
   background-color: #404bbf;
 }
 
-/* блок другий - переваги */
+/* our benefits */
 
 .advantages-h-three {
   font-weight: 500;
@@ -112,7 +165,7 @@ button{
   letter-spacing: 0.02em;
 }
 
-/* блок третій - наша команда */
+/* our team */
 .team {
   background-color: #f4f4fd;
 }
@@ -138,7 +191,7 @@ button{
 .align-text {
   text-align: center;
 }
-/* блок footer */
+/* footer */
 .footer {
   background-color: #2e2f42;
 }

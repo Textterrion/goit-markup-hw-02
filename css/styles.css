@@ -87,13 +87,6 @@ a {
   color: #434455;
 }
 
-.link-header:hover,
-.link-header:focus,
-.link-address:hover,
-.link-address:focus {
-  color: #404bbf;
-}
-
 /* hero section */
 
 .hero-s {

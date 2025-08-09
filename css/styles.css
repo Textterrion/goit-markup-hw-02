@@ -94,6 +94,14 @@ a {
   color: #2e2f42;
 }
 
+.nav-link:hover {
+  color: #404BBF;
+}
+
+.nav-link:focus {
+  color: #404BBF;
+}
+
 .address {
   font-style: normal;
 }
